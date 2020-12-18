@@ -1,25 +1,25 @@
-import { randomCap } from "./memeTypes.js";
+import { randomCap, vaporwave } from "./memeTypes.js";
 
-let textType = document.getElementById('meme-select').value;
+
 const memeButton = document.getElementById('meme-button');
 
 function memeText(memeType) {
     let input = document.getElementById('text-box').value;
-    let textArr = input.split('');
-    console.log(textArr);
+    let characterArr = input.split('');
+    let wordArr = input.split(' ');
     
 
     switch (memeType) {
         case 'randomCap':
-            console.log(randomCap(textArr));
+            console.log(randomCap(characterArr));
             break;
         case 'binary':
             console.log();
             break;
         case 'vaporwave':
-            console.log();
+            console.log(vaporwave(wordArr));
             break;
     }
 }
 
-memeButton.addEventListener('click', function() {memeText(textType)});
+memeButton.addEventListener('click', function() {memeText(document.getElementById('meme-select').value)});

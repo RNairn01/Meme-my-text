@@ -1,5 +1,5 @@
-export function randomCap(arr) {
-let output = arr.map(e => {
+export function randomCap(characterArr) {
+let output = characterArr.map(e => {
     let rand = Math.round(Math.random());
     if (rand === 0) return e;
     if (e == e.toUpperCase()) return e.toLowerCase();
@@ -11,4 +11,10 @@ let output = arr.map(e => {
 
 export function binary(arr) {}
 
-export function vaporwave(arr) {}
+export function vaporwave(wordArr) {
+    let splitArr = wordArr.map(e => e.split(''));
+    let output = splitArr.map(e => {
+        return e.map(v => v.toUpperCase());
+    }).join(" ");
+    return output;
+}
