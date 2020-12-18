@@ -20,7 +20,6 @@ function memeText(memeType) {
             break;
         case 'reverse':
             output.innerText = reverse(characterArr);
-            console.log(output.value)
             break;        
     }
 
