@@ -1,4 +1,4 @@
-import { randomCap, vaporwave } from "./memeTypes.js";
+import { randomCap, binary, vaporwave } from "./memeTypes.js";
 
 
 const memeButton = document.getElementById('meme-button');
@@ -14,7 +14,7 @@ function memeText(memeType) {
             console.log(randomCap(characterArr));
             break;
         case 'binary':
-            console.log();
+            console.log(binary(characterArr));
             break;
         case 'vaporwave':
             console.log(vaporwave(wordArr));

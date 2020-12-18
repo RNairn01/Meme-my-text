@@ -9,7 +9,15 @@ let output = characterArr.map(e => {
   return output;
 }
 
-export function binary(arr) {}
+export function binary(characterArr) {
+    let output;
+    function convertToBinary(char) {
+        return char.charCodeAt(0).toString(2);
+    }
+    output = characterArr.map(e => e.charCodeAt(0).toString(2));
+    return output.join(" ");
+
+}
 
 export function vaporwave(wordArr) {
     let splitArr = wordArr.map(e => e.split(''));
