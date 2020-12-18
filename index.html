@@ -9,21 +9,22 @@
 </head>
 <body>
     <div id="main">
-        <div id="select">
+        <h1>Meme My Text</h1>
+        <div id="select" class="tool">
           <select name="selector" id="meme-select">
             <option value="randomCap">Random Capitalization</option>
             <option value="binary">Binary</option>
             <option value="vaporwave">V A P O R W A V E</option>
           </select>
         </div>
-        <div>
+        <div class="tool">
           <textarea name="input-text" id="text-box" cols="80" rows="20" placeholder="Enter text here..."></textarea>
         </div>
-        <div>
+        <div class="tool">
           <button type="button" id="meme-button">Meme Text!</button>
         </div>
-        <div>
-            <textarea name="output-text" id="output-box" cols="80" rows="20" placeholder="Output will appear here..."></textarea>
+        <div class="tool">
+            <textarea name="output-text" id="output-box" cols="80" rows="20" placeholder="Output will appear here..." readonly></textarea>
         </div>        
     </div>
 </body>

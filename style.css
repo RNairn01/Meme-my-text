@@ -1,0 +1,36 @@
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #0C0032;
+    color: white;
+}
+
+textarea,
+button,
+select {
+    background-color: #282828;
+    color: white;
+    display: inline-block;
+
+}
+
+select {
+    width: 10rem;
+    margin: 0 auto;
+}
+
+textarea{
+    margin: 2rem auto;
+}
+
+.tool {
+    max-width: 50rem;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+}
