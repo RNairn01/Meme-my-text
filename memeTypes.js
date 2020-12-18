@@ -21,3 +21,13 @@ export function vaporwave(arr) {
     }).join(" ");
     return output;
 }
+
+export function reverse(arr) {
+    let reverseArr = [];
+    let output;
+    for (let i = arr.length-1; i >= 0; i--) {
+        reverseArr.push(arr[i]);
+    }
+    output = reverseArr.join('');
+    return output;
+}

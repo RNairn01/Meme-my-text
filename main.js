@@ -1,4 +1,4 @@
-import { randomCap, binary, vaporwave } from "./memeTypes.js";
+import { randomCap, binary, vaporwave, reverse } from "./memeTypes.js";
 
 
 const memeButton = document.getElementById('meme-button');
@@ -18,6 +18,9 @@ function memeText(memeType) {
         case 'vaporwave':
             output.innerText = vaporwave(characterArr);
             break;
+        case 'reverse':
+            output.innerText = reverse(characterArr);
+            break;        
     }
 }
 
