@@ -5,7 +5,7 @@ Meme My Text is a simple web app intended to consolidate some of the most common
 
 ## How to use
 
-Manipulating text is easy. Simply select the desired text manipulation from the dropdown menu and then type or paste the desired text into the input box. From here all you need to do is click the button labelled **"Meme Text and Copy!"** in order for your text to be automaticaly conerted and copied to the clipboard for pasting.
+Manipulating text is easy. Simply select the desired text manipulation from the dropdown menu and then type or paste the desired text into the input box. From here all you need to do is click the button labelled **"Meme Text and Copy!"** in order for your text to be automaticaly converted and copied to the clipboard for pasting.
 
 ## Available manipulations
 
