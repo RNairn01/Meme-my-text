@@ -20,8 +20,17 @@ function memeText(memeType) {
             break;
         case 'reverse':
             output.innerText = reverse(characterArr);
+            console.log(output.value)
             break;        
     }
+
+function copyText() {
+    let textToCopy = document.getElementById('output-box');
+    textToCopy.select();
+    document.execCommand("copy");
+}
+
+    memeButton.addEventListener('click', copyText);
 }
 
 memeButton.addEventListener('click', function() {memeText(document.getElementById('meme-select').value)});
