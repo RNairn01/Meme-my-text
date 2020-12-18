@@ -25,9 +25,6 @@ select {
     width: 10rem;
 }
 
-textarea{
-}
-
 .tool {
     max-width: 50rem;
     margin: 0 auto;
@@ -35,4 +32,9 @@ textarea{
 
 h1 {
     text-align: center;
+}
+
+button {
+    width: 15rem;
+    height: 3rem;
 }
