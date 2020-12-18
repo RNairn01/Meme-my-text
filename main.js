@@ -5,19 +5,18 @@ const memeButton = document.getElementById('meme-button');
 
 function memeText(memeType) {
     let input = document.getElementById('text-box').value;
+    let output = document.getElementById('output-box');
     let characterArr = input.split('');
-    let wordArr = input.split(' ');
-    
 
     switch (memeType) {
         case 'randomCap':
-            console.log(randomCap(characterArr));
+            output.innerText = randomCap(characterArr);
             break;
         case 'binary':
-            console.log(binary(characterArr));
+            output.innerText = binary(characterArr);
             break;
         case 'vaporwave':
-            console.log(vaporwave(wordArr));
+            output.innerText = vaporwave(characterArr);
             break;
     }
 }
