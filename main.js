@@ -23,13 +23,16 @@ function memeText(memeType) {
             break;        
     }
 
+
+}
+
 function copyText() {
     let textToCopy = document.getElementById('output-box');
     textToCopy.select();
     document.execCommand("copy");
 }
 
-    memeButton.addEventListener('click', copyText);
-}
 
 memeButton.addEventListener('click', function() {memeText(document.getElementById('meme-select').value)});
+memeButton.addEventListener('click', copyText);
+
